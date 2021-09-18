@@ -1,0 +1,150 @@
+/* font-family: 'Karla', sans-serif;
+font-family: 'Rampart One', cursive; */
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   height: 100vh;
+   font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 74px;
+   margin-top: -25px;
+}
+
+p {
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.slider-wrapper {
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+}
+
+/* левый слайдер */
+
+.left-slider {
+   position: absolute;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   width: 35%;
+   transition: transform .5s ease-in-out;
+}
+
+.left-slider > div {
+   height: 100%;
+}
+
+.left-slider-setting {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.big-eyes-left {
+   background-color: #d17d44;
+}
+
+.sleepy-one-left {
+   background-color: #b57570;
+}
+
+.blue-eyed-eyes-left {
+   background-color: #97a29d;
+}
+
+.fluffy-kitty-left {
+   background-color: #fafaed;
+}
+
+/* правый слайдер */
+
+.right-slider {
+   position: absolute;
+   height: 100vh;
+   top: 0;
+   right: 0;
+   width: 65%;
+   transition: transform .5s ease-in-out;
+}
+
+.right-slider > div {
+   height: 100vh;
+}
+
+.right-slider-setting {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* правый слайдер изображения */
+
+.big-eyes-right {
+   background-image: url(./assets/img/3.jpg);
+}
+
+.sleepy-one-right {
+   background-image: url(./assets/img/1.jpg);
+}
+
+.blue-eyed-eyes-right {
+   background-image: url(./assets/img/4.jpg);
+}
+
+.fluffy-kitty-right {
+   background-image: url(./assets/img/2.jpg);
+}
+
+
+
+/* Кнопки */
+.slider-wrapper .button-wrapper button{
+   position: absolute;
+   top: 50%;
+   left: 35%;
+}
+
+.button-setting {
+   padding: 15px;
+   border: none;
+   font-size: 16px;
+   cursor: pointer;
+   background-color: #fff;
+   color: #aaa;
+}
+
+.button-setting:hover {
+   color: #222;
+}
+
+.button-setting:focus {
+   outline: none;
+}
+
+.button-up {
+   transform: translateY(-100%);
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+.button-down {
+   transform: translateX(-100%);
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+
+
+
